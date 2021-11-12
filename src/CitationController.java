@@ -48,9 +48,11 @@ public class CitationController implements ActionListener {
             }
             case IEEE_SELECT -> {
                 model.setIEEESelected();
+                model.updateView();
             }
             case ACM_SELECT -> {
                 model.setACMSelected();
+                model.updateView();
             }
             case FORMAT -> {
                 model.updateView();
