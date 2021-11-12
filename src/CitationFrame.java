@@ -76,7 +76,6 @@ public class CitationFrame extends JFrame implements CitationView {
         this.add(firstNameLabel);
 
         firstNameField = new JTextField();
-        firstNameField.setActionCommand(firstNameField.getText());
         firstNameField.addActionListener(new CitationController(model, Actions.SET_FIRST_NAME));
         this.add(firstNameField);
 
@@ -84,7 +83,6 @@ public class CitationFrame extends JFrame implements CitationView {
         this.add(lastNameLabel);
 
         lastNameField = new JTextField();
-        lastNameField.setActionCommand(lastNameField.getText());
         lastNameField.addActionListener(new CitationController(model, Actions.SET_LAST_NAME));
         this.add(lastNameField);
 
